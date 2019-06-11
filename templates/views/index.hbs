@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>movie app</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <div class="maincontent">
+        {{>header}}
+        <p>Use this site to get any Movie info!</p>
+
+        <form >
+            <input type="text" name="search" placeholder="Enter Movie Name" id="mov-name">
+            <button id="mov-button">Search</button>
+        </form>
+       <p id="mov-title"></p>
+       <p id="mov-date"></p>
+       <p id="mov-genre"></p>
+       <p id="mov-plot"></p>
+       <p id="mov-imdb"></p>
+       <p id="mov-award"></p>
+
+    </div>
+ 
+    {{>footer}}
+    <script src='/js/moviejs.js'></script>
+</body>
+</html>
